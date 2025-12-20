@@ -1,5 +1,5 @@
 import React from "react";
-import imgarrow from "../assets/arrow.svg";
+import imgarrow from "../../assets/arrow.svg";
 
 const TickIcon = () => (
   <div className="flex items-center justify-center w-6 h-6 rounded bg-[#B4EDCC]">
@@ -21,7 +21,7 @@ const TickIcon = () => (
 
 const Pricing = () => {
   return (
-    <div className="w-full bg-[#F5F7FA] relative">
+    <div id="pricing" className="w-full bg-[#F5F7FA] relative">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12">
         <div className="text-left">

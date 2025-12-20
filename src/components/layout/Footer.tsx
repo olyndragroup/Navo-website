@@ -1,10 +1,11 @@
 import React from "react";
-import logo from "../assets/logo.svg";
-import facebook from "../assets/facebook.svg";
-import linkedin from "../assets/linkedin.svg";
-import github from "../assets/github.svg";
-import x from "../assets/x.svg";
-import angellist from "../assets/angellist.svg";
+
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.svg";
+import facebook from "../../assets/facebook.svg";
+import linkedin from "../../assets/linkedin.svg";
+import github from "../../assets/github.svg";
+import x from "../../assets/x.svg";
 
 const Footer = () => {
   return (
@@ -44,10 +45,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           {/* Logo and description */}
           <div className="w-full md:w-1/3 text-left">
-            <img src={logo} alt="Company Logo" className="h-20 mb-4" />
+            <img src={logo} alt="Company Logo" className="h-10 mb-10" />
             <p className="text-gray-600 text-sm leading-relaxed max-w-sm">
-              Building tools that help teams collaborate, innovate, and move
-              faster together.
+            Enjoy amazing work experiences  that create more happiness in the world.
             </p>
           </div>
 
@@ -62,24 +62,78 @@ const Footer = () => {
                   <a href="#">Overview</a>
                 </li>
                 <li>
-                  <a href="#">Features</a>
-                </li>
-                <li>
-                  <a href="#">
-                    Solutions{" "}
-                    <span className="ml-2 bg-[#C4F1D7] text-[#2ECC71] rounded-full text-xs px-2 py-0.5">
-                      New
-                    </span>
+                  <a
+                    href="/#features"
+                    className="hover:text-primary transition"
+                  >
+                    Features
                   </a>
                 </li>
+              
+            
                 <li>
-                  <a href="#">Tutorials</a>
+                  <a href="/#pricing" className="hover:text-primary transition">
+                    Pricing
+                  </a>
+                </li>
+            
+              </ul>
+            </div>
+
+           
+            <div className="text-left">
+              <h3 className="text-base font-semibold text-[#2E2E2E] mb-4">
+                Resources
+              </h3>
+              <ul className="space-y-2 text-sm text-gray-600 text-left">
+                <li>
+                  <Link
+                    to="/blog"
+                    className="hover:text-primary transition-colors duration-200"
+                  >
+                    Blog
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Pricing</a>
+                  <a href="#">Newsletter</a>
+                </li>
+              
+                <li>
+
+                       <Link
+                    to="/faq"
+                    className="hover:text-primary transition-colors duration-200"
+                  >
+                    FAQs
+                  </Link>
+                </li>
+               
+              </ul>
+            </div>
+
+            <div className="text-left">
+              <h3 className="text-base font-semibold text-[#2E2E2E] mb-4">
+                Legal
+              </h3>
+              <ul className="space-y-2 text-sm text-gray-600 text-left">
+                <li>
+                  <Link
+                    to="/terms"
+                    className="hover:text-primary transition-colors duration-200"
+                  >
+                    Terms
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Releases</a>
+                  <Link
+                    to="/privacy"
+                    className="hover:text-primary transition-colors duration-200"
+                  >
+                    Privacy
+                  </Link>
+                </li>
+                <li>
+                  <a href="#">Cookies</a>
                 </li>
               </ul>
             </div>
@@ -90,77 +144,25 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2 text-sm text-gray-600 text-left">
                 <li>
-                  <a href="#">About us</a>
+                  <Link
+                    to="/about"
+                    className="hover:text-primary transition-colors duration-200"
+                  >
+                    About Us
+                  </Link>
                 </li>
+           
                 <li>
-                  <a href="#">Careers</a>
-                </li>
-                <li>
-                  <a href="#">Press</a>
-                </li>
-                <li>
-                  <a href="#">News</a>
-                </li>
-                <li>
-                  <a href="#">Media Kit</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
+                  <Link
+                    to="/contact"
+                    className="hover:text-primary transition-colors duration-200"
+                  >
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
 
-            <div className="text-left">
-              <h3 className="text-base font-semibold text-[#2E2E2E] mb-4">
-                Resources
-              </h3>
-              <ul className="space-y-2 text-sm text-gray-600 text-left">
-                <li>
-                  <a href="#">Blog</a>
-                </li>
-                <li>
-                  <a href="#">Newsletter</a>
-                </li>
-                <li>
-                  <a href="#">Events</a>
-                </li>
-                <li>
-                  <a href="#">Help Centre</a>
-                </li>
-                <li>
-                  <a href="#">Tutorials</a>
-                </li>
-                <li>
-                  <a href="#">Support</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="text-left">
-              <h3 className="text-base font-semibold text-[#2E2E2E] mb-4">
-                Legal
-              </h3>
-              <ul className="space-y-2 text-sm text-gray-600 text-left">
-                <li>
-                  <a href="#">Terms</a>
-                </li>
-                <li>
-                  <a href="#">Privacy</a>
-                </li>
-                <li>
-                  <a href="#">Cookies</a>
-                </li>
-                <li>
-                  <a href="#">Licenses</a>
-                </li>
-                <li>
-                  <a href="#">Settings</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
 
@@ -183,9 +185,7 @@ const Footer = () => {
             <a href="#" aria-label="Github">
               <img src={github} alt="Github" className="h-6 w-6" />
             </a>
-            <a href="#" aria-label="AngelList">
-              <img src={angellist} alt="AngelList" className="h-6 w-6" />
-            </a>
+          
           </div>
         </div>
       </div>

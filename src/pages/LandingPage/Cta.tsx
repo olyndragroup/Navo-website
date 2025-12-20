@@ -1,5 +1,5 @@
 import React from "react";
-import CTAimage from "../assets/Contents.svg";
+import CTAimage from "../../assets/Contents.svg";
 
 interface CTAProps {
   title?: string;

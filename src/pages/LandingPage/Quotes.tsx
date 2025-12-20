@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import img1 from "../assets/QuoteImage.svg";
-import img2 from "../assets/img2.jpg";
-import img3 from "../assets/img3.svg";
+import img1 from "../../assets/QuoteImage.svg";
+import img2 from "../../assets/img2.jpg";
+import img3 from "../../assets/img3.svg";
 
 export default function QuoteSection() {
   const slides = [

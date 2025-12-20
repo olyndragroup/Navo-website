@@ -1,28 +1,35 @@
 import React from "react";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Features from "./components/Features";
-import Metrics from "./components/Metrics";
-import Trial from "./components/Trial";
-import Quotes from "./components/Quotes";
-import CTA from "./components/Cta";
-import Pricing from "./components/Pricing";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToHashElement from "./components/ScrollToHashElement";
 
-import "./App.css";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import AboutUs from "./pages/AboutUs";
+import LandingPage from "./pages/LandingPage"; // 👈 this automatically loads pages/Home/index.tsx
+import FAQs from "./pages/FAQs";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Contact from "./pages/ContactUs";
+import Blog from "./pages/Blog";
 
 export default function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Hero />
-      <Features />
-      <Metrics />
-      <Trial />
-      <Pricing />
-      <Quotes />
-      <CTA />
+      <ScrollToHashElement /> 
+      <main className="pt-20">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />   {/* 👈 Home page */}
+          <Route path="/about" element={<AboutUs />} />  {/* 👈 About page */}
+          <Route path="/faq" element={<FAQs />} />  {/* 👈 FAQs page */}
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+        
+        </Routes>
+      </main>
       <Footer />
-    </div>
+    </Router>
   );
 }

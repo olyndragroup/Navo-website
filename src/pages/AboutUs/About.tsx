@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-export default function Features() {
+export default function About() {
   const [activeTab, setActiveTab] = useState(0);
 
-  const features = [
+  const about = [
     {
       title: "Share team inboxes",
       description:
@@ -25,25 +25,23 @@ export default function Features() {
     <section className="w-full bg-[#F5F7FA] py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section header */}
-        <div className="text-left w-full lg:max-w-3xl mb-16">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-[#3F51B5] mb-3">
-            Features
+        <div className=" w-full lg:max-w-3xl mb-16 text-center">
+          <h2 className="text-sm font-semibold  tracking-wide text-[#3F51B5] mb-3">
+            About us
           </h2>
-          <h3 className="text-3xl lg:text-4xl font-bold text-[#2E2E2E] mb-4">
-            Overflowing with useful features
+          <h3 className="text-3xl lg:text-4xl font-semibold text-[#2E2E2E] text-center mb-4">
+            Our mission is to make working fun and easier!
           </h3>
-          <p className="text-lg text-gray-600">
-            A flexible and powerful workflow application, built to help teams
-            and businesses digitize operations, reduce delays, and collaborate
-            effortlessly from a single intuitive dashboard.
+          <p className="text-lg text-[#2E2E2E] text-center">
+            Nova is a Modular workflow solution company that reduces workload for you and your team, so you don't have to stress. Businesses of every size - from new startups to public companies - use our software to manage their businesses.
           </p>
         </div>
 
-        {/* Features + image */}
+        {/* about + image */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
           {/* Tabs */}
           <div className="flex flex-col gap-6 w-full lg:w-1/2">
-            {features.map((feature, index) => (
+            {about.map((about, index) => (
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
@@ -55,10 +53,10 @@ export default function Features() {
               >
                 <div className="flex flex-col">
                   <h3 className="font-medium text-lg text-[#2E2E2E]">
-                    {feature.title}
+                    {about.title}
                   </h3>
                   <p className="text-sm text-[#667085]">
-                    {feature.description}
+                    {about.description}
                   </p>
                   <button className="mt-4 text-[#3F51B5] font-medium flex items-center gap-2 hover:underline">
                     Learn More

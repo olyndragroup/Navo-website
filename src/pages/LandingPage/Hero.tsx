@@ -1,7 +1,7 @@
 import React from "react";
-import heroImage from "../assets/HeroImage.svg";
+import heroImage from "../../assets/HeroImage.svg";
 
-const HeroHeader = () => {
+const Hero = () => {
   return (
     <div className="w-full bg-[#F5F7FA] py-20">
       {/* Main container */}
@@ -22,7 +22,9 @@ const HeroHeader = () => {
             <button className="px-8 py-3 bg-[#3F51B5] text-white rounded-lg hover:bg-[#2E3A8F] transition-colors">
               Sign Up
             </button>
+            
           </div>
+          
         </div>
 
         {/* Right: image */}
@@ -38,4 +40,4 @@ const HeroHeader = () => {
   );
 };
 
-export default HeroHeader;
+export default Hero;
