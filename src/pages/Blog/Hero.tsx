@@ -1,6 +1,6 @@
 import React from "react";
 import blogImage from "../../assets/BlogImage.svg";
-import mo from "../../assets/MO.svg";
+// import mo from "../../assets/MO.svg";
 
 const Hero = () => {
   return (
