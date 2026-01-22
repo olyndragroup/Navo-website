@@ -20,9 +20,22 @@ type SectionProps = {
 
 const DEFAULT_MENU: MenuItem[] = [
   { id: "introduction", label: "Introduction", href: "#introduction" },
-  { id: "software", label: "Software and tools", href: "#software" },
-  { id: "resources", label: "Other resources", href: "#resources" },
-  { id: "conclusion", label: "Conclusion", href: "#conclusion" },
+  {
+    id: "workflow",
+    label: "How Workflow Automation Improves Execution",
+    href: "#workflow",
+  },
+  {
+    id: "standardization",
+    label: "Standardization and Scalability",
+    href: "#standardization",
+  },
+  {
+    id: "summary",
+    label: "Summary: Working Smarter, Not Harder",
+    href: "#summary",
+  },
+  { id: "request", label: "Request a Demo", href: "#request" },
 ];
 
 const Sidebar: React.FC<{
@@ -98,7 +111,7 @@ const Section: React.FC<SectionProps> = ({
 
         {/* Main content */}
         <main className="md:col-span-3 font-sans text-[#667085] leading-relaxed">
-          <div className="prose prose-lg max-w-none mb-8">
+          {/* <div className="prose prose-lg max-w-none mb-8">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
@@ -106,9 +119,9 @@ const Section: React.FC<SectionProps> = ({
               purus. Non massa enim vitae duis mattis. Vel in ultricies vel
               fringilla.
             </p>
-          </div>
+          </div> */}
 
-          <hr className="border-t border-[#C7C7CC] my-8" />
+          {/* <hr className="border-t border-[#C7C7CC] my-8" /> */}
 
           {/* Introduction */}
           <section id="introduction" className="mb-12">
@@ -118,11 +131,11 @@ const Section: React.FC<SectionProps> = ({
 
             <div className="prose prose-lg max-w-none mb-8">
               <p>
-                Mr Hosbartt, 6th of outdoor lights as often, went. Yet often
-                researching novel oriented facades right westbound this. Didn’t
-                man mind it, at it. Then alligum onion may, drain. Maist!
-                Possess vulputate arcu amet, vitae nis, tellus rhodant. At
-                King’s first time, he looks pharetra, sempre.
+                Modern teams are constantly juggling tasks, deadlines, and
+                communication across multiple tools. As workloads increase,
+                manual processes often slow teams down and create confusion.
+                This is where workflow automation becomes a powerful solution
+                for improving team productivity.
               </p>
             </div>
 
@@ -135,67 +148,55 @@ const Section: React.FC<SectionProps> = ({
               />
             </div>
 
-            {/* Quote */}
-            <blockquote className="border-l-4 border-[#3F51B5] pl-6 py-6 my-8 rounded-r-lg bg-white">
-              <p className="text-xl italic text-[#2E2E2E] mb-4">
-                “The beauty of design is that when you see a problem, you have
-                an itch to solve it, making the world better, one design at a
-                time!”
-              </p>
-              <cite className="block text-sm text-[#667085]">
-                — Olivia Bihay, Product Designer
-              </cite>
-            </blockquote>
+           
 
-            <div className="prose prose-lg max-w-none">
-              <p>
-                Don't enim eu tortor curs sed ad nulla. Aliquam vestibulum,
-                nulla odio in vitae. In aliquet performatis paneuvel nec
-                vestibulum turpis mi blandit nonummy. Tempor integer aliquam in
-                vitae malesuada fringilla.
-              </p>
-
-              <p>
-                Ett misi in officinal sed risi. Parvival ut erot, perch
-                imperdiet commodo consectetur consunt felis. Sed volutpatien cum
-                dignissim facilisis consequat.
-              </p>
-            </div>
           </section>
 
-          {/* Software and Tools */}
-          <section id="software" className="mb-12">
+          {/* How Workflow Automation Improves Execution */}
+          <section id="workflow" className="mb-12">
             <h2 className="text-2xl font-bold mb-6 text-[#2E2E2E]">
-              Software and tools
+              How Workflow Automation Improves Execution
             </h2>
 
             <div className="prose prose-lg max-w-none">
+              <p className="text-[#667085] mb-4">
+                Workflow automation helps teams streamline repetitive tasks by
+                defining clear steps, responsibilities, and triggers within a
+                single system. Instead of manually assigning tasks or following
+                up through emails and chats, automation ensures that work moves
+                forward automatically. This reduces delays, minimizes errors,
+                and allows team members to focus on higher-value work.{" "}
+              </p>{" "}
               <p className="text-[#667085]">
-                Pharetra morbi libero id aliquam elit massa integer tellus. Quis
-                felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit
-                dictumst ut eget a, elementum eu. Maecenas est morbi mattis id
-                in ac pellentesque ac.
+                {" "}
+                Another major benefit of workflow automation is improved
+                visibility. When tasks, progress, and ownership are clearly
+                mapped out, teams gain a better understanding of who is doing
+                what and when. Managers can easily track progress, identify
+                bottlenecks, and make informed decisions without micromanaging.
+                This transparency builds accountability and helps teams
+                collaborate more effectively.{" "}
               </p>
             </div>
           </section>
 
-          {/* Other resources */}
-          <section id="resources" className="mb-12">
+          {/* Standardization and Scalability */}
+          <section id="standardization" className="mb-12">
             <h2 className="text-2xl font-bold mb-6 text-[#2E2E2E]">
-              Other resources
+              Standardization and Scalability
             </h2>
             <div className="md:grid-cols-2 gap-8 mb-8">
               {" "}
               <p className="mb-4">
                 {" "}
-                Sagittis et eu at elementum, quis in. Pinci moment voluntari
-                egestas sechs et beem nunc nunc id. Eget dan candidum nil ac.
-                Anctor rutrum locus maximusdu massa omine ex. Ungulare
-                consequatur te simbra et dans de riget frngilla indebted. Aero
-                ut dignissimum massa erot ante. Vulvitetur gravida til. Sed qui
-                at accurs vulputus lauc elementum gravida contra ela.{" "}
+                Workflow automation also improves consistency. Automated
+                workflows ensure that processes are followed the same way every
+                time, which is especially important for growing teams. Whether
+                onboarding new employees, launching projects, or handling
+                recurring operations, automation helps maintain quality and
+                efficiency as the organization scales.{" "}
               </p>{" "}
-              <ol className="list-decimal pl-5 ">
+              {/* <ol className="list-decimal pl-5 ">
                 {" "}
                 <li className="text-[#667085]">
                   {" "}
@@ -211,7 +212,7 @@ const Section: React.FC<SectionProps> = ({
                   Suspendisse meccenas ex glores testicolosae diam sed est duis
                   penus.{" "}
                 </li>{" "}
-              </ol>{" "}
+              </ol>{" "} */}
             </div>
 
             {/* Image 2 */}
@@ -223,7 +224,7 @@ const Section: React.FC<SectionProps> = ({
               />
             </div>
 
-            <div className="prose prose-lg max-w-none py-4">
+            {/* <div className="prose prose-lg max-w-none py-4">
               {" "}
               <p className="mb-4">
                 {" "}
@@ -242,25 +243,26 @@ const Section: React.FC<SectionProps> = ({
                 vitae elementum facultius malesis pulentesque. Aero utilibus sus
                 mauris vestibulum.{" "}
               </p>{" "}
-            </div>
+            </div> */}
           </section>
 
-          {/* Conclusion */}
-          <section id="conclusion" className="mb-12">
+          {/* Summary: Working Smarter, Not Harder */}
+          <section id="summary" className="mb-12">
             <h2 className="text-2xl font-bold mb-6 text-[#2E2E2E]">
-              Conclusion
+              Summary: Working Smarter, Not Harder
             </h2>
 
             <div className="prose prose-lg max-w-none">
               {" "}
               <p className="mb-4">
                 {" "}
-                Meriti sed imperdiet in ipsum, adipiscing elit dui lectus.
-                Tellus id societique est ultricies ultricies. Duis est sit sed
-                ten nisi, blandit elit sagittis. Outique totique consequat quam
-                sed. Mis id societiques amet nulla paun habitales.{" "}
+                In today’s fast-paced work environment, productivity is no
+                longer about working harder—it’s about working smarter. By
+                reducing manual effort, improving visibility, and standardizing
+                processes, workflow automation empowers teams to do their best
+                work with less friction.{" "}
               </p>{" "}
-              <p className="mb-4">
+              {/* <p className="mb-4">
                 {" "}
                 Merc ised fabuleus placinatum fugidil sed laborellis. Notam
                 egestas societiferisum nil mattia in. Rincidunt patentes
@@ -279,6 +281,38 @@ const Section: React.FC<SectionProps> = ({
                 {" "}
                 Mais adipiscing erot a cet. Condimentum letem posuere gravida
                 enim posuere cursus aturo.{" "}
+              </p>{" "} */}
+            </div>
+          </section>
+ {/* Quote */}
+ <blockquote className="border-l-4 border-[#3F51B5] pl-6 py-6 my-8 rounded-r-lg bg-white">
+              <p className="text-xl italic text-[#2E2E2E] mb-4">
+                “Workflow automation has made backend work feel cleaner and
+                calmer. Less time chasing updates, fewer manual handoffs, and
+                more time building reliable systems that actually scale!”
+              </p>
+              <cite className="block text-sm text-[#667085]">
+                — Olivia Bihay, Backend Engineer
+              </cite>
+            </blockquote>
+
+          {/* Request a Demo*/}
+          <section id="request">
+            <h2 className="text-2xl font-bold mb-4 text-[#2E2E2E]">
+              Request a Demo
+            </h2>
+
+            <div className="prose prose-lg max-w-none">
+              {" "}
+              <p className="mb-1">
+                {" "}
+                Interested in seeing how workflow automation can transform your
+                team?{" "}
+              </p>{" "}
+              <p className="mb-1">
+                {" "}
+                Request a demo of Olyndra and discover a smarter way to manage
+                work.{" "}
               </p>{" "}
             </div>
           </section>

@@ -146,7 +146,7 @@ const Contact: React.FC = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-[#3F51B5] text-white py-3 rounded-lg font-medium hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500"
+            className="cursor-pointer w-full bg-[#3F51B5] text-white py-3 rounded-lg font-medium hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500"
           >
             Send Message
           </button>

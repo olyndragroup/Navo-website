@@ -18,13 +18,12 @@ const Hero = () => {
 
           {/* Title */}
           <h1 className="text-4xl lg:text-5xl font-semibold text-[#2E2E2E] mb-6">
-            How Navo makes things easier for our team
+          How Workflow Automation Improves Team Productivity
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg lg:text-xl text-[#667085] mb-8">
-            Collaboration can make our teams stronger, and our individual
-            designs better.
+          Reducing manual work, improving visibility, and building consistent processes for modern teams.
           </p>
 
           {/* Author */}
@@ -36,8 +35,8 @@ const Hero = () => {
   />
 
   <div className="flex flex-col justify-center">
-    <p className="text-sm text-[#101828] font-semibold">Mary Ogu</p>
-    <p className="text-sm text-[#667085]">Published 14 Oct 2025</p>
+    <p className="text-sm text-[#101828] font-semibold">Francisca Igwe</p>
+    <p className="text-sm text-[#667085]">Published 21 Jan 2026</p>
   </div>
 </div>
 
